@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat Room</title>
+</head>
+<body>
+
+    <h2 id="roomName"></h2>
+    <div id="messages" style="height:300px; overflow-y:auto; border:1px solid #ccc;"></div>
+
+    <input id="input" placeholder="Type a message">
+    <button onclick="send()">Send</button>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
