@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Join Chat</title>
+</head>
+<body>
+  <h2>Enter Chat Room</h2>
+
+  <input id="username" placeholder="Your name">
+  <input id="room" placeholder="Room ID">
+
+  <button onclick="joinRoom()">Join</button>
+
+  <script>
+    function joinRoom() {
+      const name = document.getElementById("username").value
+      const room = document.getElementById("room").value
+      window.location = `chat.html?name=${name}&room=${room}`
+    }
+  </script>
+</body>
+</html>
